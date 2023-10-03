@@ -1,0 +1,34 @@
+.card_title {
+    font-family: $font-title;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5%;
+}
+
+p.date {
+    font-family: $font-text;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: $font-title;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+p.more {
+    font-family: $font-text;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: justify;
+}
