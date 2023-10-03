@@ -76,7 +76,6 @@ input {
 
 .btn--card {
   padding: 10px 2px 10px 2px;
-  border: 1px solid white;
   text-align: center;
   justify-content: center;
   width: 4%;
@@ -84,8 +83,7 @@ input {
 }
 .btn--card:hover {
   border-radius: 50px;
-  border: 1px solid rgba(238, 238, 238, 0.9333333333);
-  background-color: rgba(238, 238, 238, 0.9333333333);
+  filter: drop-shadow(5px 5px 5px #626060);
 }
 
 .tasks--btn {
@@ -133,4 +131,9 @@ input {
   background: #EEF2F5;
   border-radius: 10px;
   padding: 25px 40px 25px 40px;
+}
+.cards .card .card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
