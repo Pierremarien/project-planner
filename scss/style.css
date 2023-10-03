@@ -54,13 +54,7 @@ input {
   width: 75px;
 }
 
-.btn--nav {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  width: 50%;
-  gap: 5%;
-}
-.btn--nav .btn {
+.btn {
   color: black;
   text-decoration: none;
   padding: 10px 2px 10px 2px;
@@ -69,7 +63,7 @@ input {
   text-align: center;
   justify-content: center;
 }
-.btn--nav .btn:hover {
+.btn:hover {
   border-radius: 50px;
   background-color: rgba(238, 238, 238, 0.9333333333);
 }
@@ -102,12 +96,7 @@ input {
   background-color: rgba(238, 238, 238, 0.9333333333);
 }
 
-.kebab--menu {
-  display: grid;
-  grid-template-rows: auto auto auto auto auto;
-  gap: 2.5%;
-}
-.kebab--menu .kebab--btn {
+.kebab--btn {
   width: 15%;
   background-color: rgb(128, 128, 128);
   filter: opacity(40%);
@@ -115,6 +104,6 @@ input {
   border-radius: 15px;
   transition: 0.3s;
 }
-.kebab--menu .kebab--btn:hover {
+.kebab--btn:hover {
   transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
