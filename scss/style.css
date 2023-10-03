@@ -117,4 +117,59 @@ input {
 }
 .kebab--menu .kebab--btn:hover {
   transform: scale(1.2);
+}
+
+.searchBox {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  background: #2475BF;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: #ffffff;
+  color: #2475BF;
+}
+
+.searchButton {
+  color: #ffffff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #18B0FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
