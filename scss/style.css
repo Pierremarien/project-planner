@@ -185,6 +185,8 @@ p.more {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
 .searchBox {
   position: absolute;
   transform: translate(-50%, 50%);
