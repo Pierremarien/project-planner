@@ -9,7 +9,7 @@
     - Date limite : 05/10/2023 - 17h00
         
 
-## Quelle est la leçon en cours ?
+## Mission(s) ?
 
 #### Liste des fonctionnalités que nous aimerions voir :
 

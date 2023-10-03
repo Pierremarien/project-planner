@@ -1,0 +1,89 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;300;600;900&display=swap');
+
+//Fonts
+$font-title: 'Gochi Hand';
+$font-text: 'Onest', sans-serif;
+$font-h2: 
+    font-size 36px,
+    font-weight 900,
+    text-transform uppercase;
+$font-h3:
+    font-size 28px,
+    font-weight 600;
+$font-h4:
+    font-size 28px,
+    font-weight 600,
+    color #353535;
+
+//colors
+$white: #fffeee;
+$black: #000000;
+$red: #FF2473;
+$orange: #FEA946;
+$green: #40A737;
+$blue: #18B0FF;
+
+//Size
+$section-width: 355px;
+
+//Layout Container-List
+$container-list: 
+    width 355px,
+    height 840px,
+    border-radius 10px;
+//Layout Container-Task
+$container-task :
+    width 300px,
+    height 208px,
+    border-radius 20px;
+
+//Effect
+$shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+
+//////////////////////////////////////////////////////////
+//BUTTON
+$button: //.button
+    text-align center,
+    text-transform uppercase,
+    cursor pointer,
+    font-size 20px,
+    letter-spacing 4px,
+    position relative,
+    background-color #2475BF,
+    border none,
+    color #ffffff,
+    padding 20px,
+    width 200px,
+    text-align center,
+    transition-duration 0.4s,
+    overflow hidden,
+    box-shadow 0 5px 15px #193047,
+    border-radius 4px;
+//.button:hover 
+$button-hover:
+    background #ffffff,
+    box-shadow 0px 2px 10px 5px #83BDFF,
+    color #000;
+//.button:after
+$button-after:
+    content "",
+    background #193047,
+    display block,
+    position absolute,
+    padding-top 300%,
+    padding-left 350%,
+    margin-left -20px,
+    margin-top -120%,
+    opacity 0,
+    transition all 0.8s;
+//.button:active:after 
+$button-active-after:
+    padding 0,
+    margin 0,
+    opacity 1,
+    transition 0s;
+//.button:focus  
+$button-focus:
+    outline 0; 
