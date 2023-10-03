@@ -1,0 +1,20 @@
+.tasks {
+    background-color: white;
+    padding: 3% 5% 3% 5%;
+    border-radius: 20px;
+    height: 30%;
+
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .elipse {
+            flex-grow: 0.1;
+        }
+        
+        .date {
+            flex-grow: 2;
+        }
+    }
+}
