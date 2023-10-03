@@ -1,0 +1,16 @@
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: 10px 50px 10px 50px;
+    .card {
+        width: 360px;
+        height: 840px;
+        left: 46px;
+        top: 181px;
+        background: #EEF2F5;
+        border-radius: 10px;
+        padding: 25px 40px 25px 40px;
+    }
+}
+
