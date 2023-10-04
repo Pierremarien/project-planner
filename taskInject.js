@@ -9,13 +9,16 @@ function taskInject() {
         let titleValue = title.value.trim();
         let descriptionValue = description.value.trim();
         let datePicker = document.querySelector('.date');
-        let date = datePicker.value;
+        let dateValue = datePicker.value;
 
-        addTask(titleValue, descriptionValue, date);
+        addTask(titleValue, descriptionValue, dateValue);
     });
 
-    function addTask(titleValue, descriptionValue, date) {
+    function addTask(titleValue, descriptionValue, dateValue) {
         let target = document.querySelector('.tasksToDo');
+        let currentDate = new Date(); 
+        let dueDate = new Date(dateValue); 
+        let daysRemaining = Math.floor((dueDate - currentDate) / (1000 * 60 * 60 * 24));
         let task = `
             <div class="tasks">
                 <div class="infos">
@@ -30,7 +33,7 @@ function taskInject() {
                         <circle cx="4.5" cy="4.5" r="4.5" fill="#18B0FF" />
                         </svg>
                     </div>
-                    <p class="date">${date}</p>
+                    <p class="date">${dateValue} ${daysRemaining} days left</p>
                     <div class="burger burger--card">
                         <input type="checkbox" class="burger--card_check" />
                         <div class="tasks--btn">
@@ -90,7 +93,7 @@ function taskInject() {
                     </p>
                 </div>
             </div>`;
-            target.innerHTML = task;
+            target.innerHTML += task;
     }
 
 }
