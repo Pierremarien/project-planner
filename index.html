@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porject Planner</title>
-    <script
-      src="https://kit.fontawesome.com/1ff63d2ee1.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./scss/style.css" />
-  </head>
-  <body>
+    <title>Project Planner</title>
+    <script src="https://kit.fontawesome.com/1ff63d2ee1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./scss/style.css">
+    <script defer src="./cardsForms.js"></script>
+</head>
+<body>
     <header>
         <nav> 
             <div class="logo">
@@ -63,7 +61,9 @@
             <h2>To Do</h2>
             <div class="btn--card">
               <!--bouton add-->
-              <svg
+              <div class="formCard">
+                <button class="click">
+                    <svg class="svgform"
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
@@ -85,6 +85,14 @@
                   stroke-linejoin="round"
                 />
               </svg>
+            </button>
+            <form class="form" style="display: none;">
+                <input class="date" type="date"/>
+                <input class="titleForm" type="text"/>
+                <input class="description" type="text"/>
+                <input class="submit" type="submit" value="Submit"/>
+            </form>
+        </div>
             </div>
           </div>
           <!--tasks-->

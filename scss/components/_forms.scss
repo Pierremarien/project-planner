@@ -1,0 +1,35 @@
+.click {
+    border: none;
+    background-color: #EEF2F5 ;
+    border-radius:50px;
+}
+
+.form {
+    border-radius: 20px;
+    position: absolute;
+    background-color: #eaebec;
+    width: 220px;
+    height: 150px;
+    padding-top: 10px;
+    .date {
+        border-radius: 10px;
+        font-family: $font-text;
+    }
+    .titleForm {
+        border-radius: 10px;
+        height: 25px;
+        font-family: $font-text;
+        margin-top: 1%;
+    }
+    .description {
+        border-radius: 10px;
+        height: 40px;
+        font-family: $font-text;
+        margin-top: 1%;
+    }
+    .submit {
+        font-family: $font-text;
+        border-radius: 10px;
+        margin-top: 1%;
+    }
+}
