@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    align-items: center; // marge d'écriture au centre
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    .logo {
+        margin-left: 3%;
+    }
+    nav{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        .searchBox {
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+    }
+}
