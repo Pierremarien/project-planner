@@ -10,7 +10,6 @@ function taskInject() {
         let descriptionValue = description.value.trim();
         let datePicker = document.querySelector('.date');
         let dateValue = datePicker.value;
-
         addTask(titleValue, descriptionValue, dateValue);
     });
 
@@ -96,7 +95,7 @@ function taskInject() {
             target.innerHTML += task;
     }
     sortByName();
-
+    modifybtn();
 }
 
 taskInject();
