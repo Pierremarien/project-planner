@@ -33,7 +33,7 @@ function taskInject() {
                         <circle cx="4.5" cy="4.5" r="4.5" fill="#18B0FF" />
                         </svg>
                     </div>
-                    <p class="date">${dateValue} ${daysRemaining} days left</p>
+                    <p class="date"><span class="dueDate">${dateValue}</span> ${daysRemaining} days left</p>
                     <div class="burger burger--card">
                         <input type="checkbox" class="burger--card_check" />
                         <div class="tasks--btn">
@@ -72,13 +72,13 @@ function taskInject() {
                             <button class="kebab--btn" type="button">WIP</button>
                         </li>
                         <li>
-                            <button class="kebab--btn" type="button">Delete</button>
+                            <button class="kebab--btn delete" type="button">Delete</button>
                         </li>
                         <li>
                             <button class="kebab--btn" type="button">To Do</button>
                         </li>
                         <li>
-                            <button class="kebab--btn" type="button">Modify</button>
+                            <button class="kebab--btn modify" type="button">Modify</button>
                         </li>
                         <li>
                             <button class="kebab--btn" type="button">Done</button>
