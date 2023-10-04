@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porject Planner</title>
+    <title>Project Planner</title>
     <link rel="stylesheet" href="./scss/style.css">
+    <script defer src="./cardsForms.js"></script>
 </head>
 <body>
     <header>
@@ -29,10 +30,20 @@
                 <div class="card_title">
                     <h2>To Do</h2>
                   <div class="btn--card"> <!--bouton add-->
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="formCard">
+                        <button class="click">
+                            <svg class="svgform" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 1V15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M1 8H15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                            </svg>
+                        </button>
+                        <form class="form" style="display: none;">
+                            <input class="date" type="date"/>
+                            <input class="titleForm" type="text"/>
+                            <input class="description" type="text"/>
+                            <input class="submit" type="submit" value="Submit"/>
+                        </form>
+                    </div>
                     </div>
                 </div>
                     <!--tasks-->
@@ -63,12 +74,6 @@
             <div class="card">
                 <div class="card_title">
                     <h2>Work In Progress</h2>
-                    <div class="btn--card"> <!--bouton add-->
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1V15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M1 8H15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
                 </div>
                     <!--tasks-->
                 <div class="tasks">
@@ -98,30 +103,6 @@
             <div class="card">
                 <div class="card_title">
                     <h2>Done</h2>
-                    <div class="btn--card"> <!--bouton add-->
-                    <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-                    >
-          <path
-            d="M8 1V15"
-            stroke="black"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-                      />
-          <path
-            d="M1 8H15"
-            stroke="black"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-                    </svg>
-                  </div>
                 </div>
                     <!--tasks-->
                 <div class="tasks">
