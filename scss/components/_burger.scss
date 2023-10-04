@@ -37,8 +37,8 @@
 
         &_menu-items {
             position: absolute;
-            top: 0px;
-            left: 50px;
+            top: 30px;
+            left: -90px;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -48,10 +48,11 @@
             gap: 10px;
             border-radius: 15px;
             transform: translate(-20000px, 0);
-            transition: transform 0.5s ease-in-out;
-            transform-origin: 0.5s ease-in-out;
+            transition: transform 0s ease-in-out;
+            transform-origin: 0s ease-in-out;
             -webkit-box-shadow: 8px 9px 18px 9px rgba(56,56,56,0.83); 
             box-shadow: 8px 9px 18px 9px rgba(56,56,56,0.83);
+            z-index: 20;
         }
 
         &_check:checked ~ &_menu-items {
