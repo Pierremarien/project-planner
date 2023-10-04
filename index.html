@@ -13,6 +13,10 @@
     <script defer src="./cardsForms.js"></script>
     <link rel="stylesheet" href="./scss/style.css" />
     <script defer src="./modify.js"></script>
+    <script defer src="./filtres.js"></script>
+    <script defer src="./name.js"></script>
+    <script defer src="taskInject.js"></script>
+    <script defer src="sortDate.js"></script>
 </head>
 <body>
     <header>
@@ -37,328 +41,98 @@
             <span class="line line3"></span>
           </div>
           <ul class="burger--navbar_menu-items">
-            <li>
-              <button class="btn" type="button">All</button>
-              <!--burger navBar-->
+            <li><!--burger navBar-->
+              <button class="btn btn--all" type="button">All</button>
             </li>
             <li>
-              <button class="btn" type="button">Done</button>
+              <button class="btn btn--done" type="button">Done</button>
             </li>
             <li>
-              <button class="btn" type="button">WIP</button>
+              <button class="btn btn--wip" type="button">WIP</button>
             </li>
             <li>
-              <button class="btn" type="button">To Do</button>
+              <button class="btn btn--todo" type="button">To Do</button>
             </li>
             <li>
-              <button class="btn" type="button">Date</button>
+              <button class="btn dateBtn" type="button">Date</button>
             </li>
             <li>
-              <button class="btn" type="button">Name</button>
+              <button class="btn btn--name" type="button">Name</button>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-        <!-- bouton add task -->
-        <section class="cards">
-            <div class="card">
-                <div class="card_title">
-                    <h2>To Do</h2>
-                    <div class="btn--card">
-                    <!--bouton add-->
-                    <div class="formCard">
-                        <button class="click">
-                        <svg
-                            class="svgform"
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                            d="M8 1V15"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            />
-                            <path
-                            d="M1 8H15"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            />
-                        </svg>
-                        </button>
-                        <form class="form" style="display: none">
-                        <input class="date" type="date" />
-                        <input class="titleForm" type="text" />
-                        <input class="description" type="text" />
-                        <input class="submit" type="submit" value="Submit" />
-                        </form>
-                    </div>
-                    </div>
-                </div>
-                <!--tasks-->
-                <div class="tasksTodo">
-                    <div class="tasks">
-                        <div class="infos">
-                            <div class="elipse">
-                                <svg
-                                width="9"
-                                height="9"
-                                viewBox="0 0 9 9"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                <circle cx="4.5" cy="4.5" r="4.5" fill="#18B0FF" />
-                                </svg>
-                            </div>
-                            <p class="date">October 10th - in 7 days</p>
-                            <div class="burger burger--card">
-                                <input type="checkbox" class="burger--card_check" />
-                                <div class="tasks--btn">
-                                <svg
-                                    width="18"
-                                    height="4"
-                                    viewBox="0 0 18 4"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                    d="M9 3C9.55228 3 10 2.55228 10 2C10 1.44772 9.55228 1 9 1C8.44772 1 8 1.44772 8 2C8 2.55228 8.44772 3 9 3Z"
-                                    stroke="black"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    />
-                                    <path
-                                    d="M16 3C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3Z"
-                                    stroke="black"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    />
-                                    <path
-                                    d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z"
-                                    stroke="black"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    />
-                                </svg>
-                                </div>
-                                <ul class="burger--card_menu-items">
-                                    <li>
-                                        <button class="kebab--btn btnWip" type="button">WIP</button>
-                                    </li>
-                                    <li>
-                                        <button class="kebab--btn delete" type="button">Delete</button>
-                                    </li>
-                                    <li>
-                                        <button class="kebab--btn btnToDo" type="button">To Do</button>
-                                    </li>
-                                    <li>
-                                        <button class="kebab--btn modify" type="submit">Modify</button>
-                                    </li>
-                                    <li>
-                                        <button class="kebab--btn btnDone" type="button">Done</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="task">
-                            <h3 class="title">Something</h3>
-                            <p class="more">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            obcaecati illum autem odit tempora ea, laboriosam aliquam
-                            accusamus quod doloribus ducimus expedita, laborum soluta, amet
-                            corrupti? Quod exercitationem dolore quas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <!-- bouton add task -->
+      <section class="cards">
+        <div class="card todo" style="display:block">
+          <div class="card_title">
+            <h2>To Do</h2>
+            <div class="btn--card">
+              <!--bouton add-->
+              <div class="formCard">
+                <button class="click">
+                  <svg
+                    class="svgform"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1V15"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 8H15"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <form class="form" style="display: none">
+                  <input class="date" type="date" />
+                  <input class="titleForm" type="text" />
+                  <input class="description" type="text" />
+                  <input class="submit" type="submit" value="Submit" />
+                </form>
+              </div>
             </div>
-            <!--cartes-->
-            <div class="card">
-                <div class="card_title">
-                    <h2>Work In Progress</h2>
-                </div>
-                <!--tasks-->
-                <div class="tasksWip">
-                    <div class="tasks">
-                        <div class="infos">
-                        <div class="elipse">
-                            <svg
-                            width="9"
-                            height="9"
-                            viewBox="0 0 9 9"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <circle cx="4.5" cy="4.5" r="4.5" fill="#18B0FF" />
-                            </svg>
-                        </div>
-                        <p class="date">October 10th - in 7 days</p>
-                        <div class="burger burger--card">
-                            <input type="checkbox" class="burger--card_check" />
-                            <div class="tasks--btn">
-                            <svg
-                                width="18"
-                                height="4"
-                                viewBox="0 0 18 4"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                d="M9 3C9.55228 3 10 2.55228 10 2C10 1.44772 9.55228 1 9 1C8.44772 1 8 1.44772 8 2C8 2.55228 8.44772 3 9 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                />
-                                <path
-                                d="M16 3C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                />
-                                <path
-                                d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                />
-                            </svg>
-                            </div>
-                            <ul class="burger--card_menu-items">
-                            <li>
-                                <button class="kebab--btn btnWip" type="button">WIP</button>
-                            </li>
-                            <li>
-                                <button class="kebab--btn delete" type="button">
-                                Delete
-                                </button>
-                            </li>
-                            <li>
-                                <button class="kebab--btn btnToDo" type="button">To Do</button>
-                            </li>
-                            <li>
-                                <button class="kebab--btn modify" type="submit">Modify</button>
-                            </li>
-                            <li>
-                                <button class="kebab--btn btnDone" type="button">Done</button>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div class="task">
-                        <h3 class="title">Something</h3>
-                        <p class="more">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            obcaecati illum autem odit tempora ea, laboriosam aliquam
-                            accusamus quod doloribus ducimus expedita, laborum soluta, amet
-                            corrupti? Quod exercitationem dolore quas.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <!--tasks-->
+          <div class="tasksContainer tasksToDo">
+            
+          </div>
+        </div>
+        <!--cartes-->
+        <div class="card wip" style="display:block">
+          <div class="card_title">
+            <h2>Work In Progress</h2>
+          </div>
+          <!--tasks-->
+          <div class="tasksContainer tasksWip">
+           
+          </div>
+        </div>
 
-            <!--cartes-->
-            <div class="card">
-                <div class="card_title">
-                    <h2>Done</h2>
-                </div>
-                <!--tasks-->
-                <div class="tasksDone">
-                    <div class="tasks">
-                    <div class="infos">
-                        <div class="elipse">
-                            <svg
-                                width="9"
-                                height="9"
-                                viewBox="0 0 9 9"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <circle cx="4.5" cy="4.5" r="4.5" fill="#18B0FF" />
-                            </svg>
-                        </div>
-                        <p class="date">October 10th - in 7 days</p>
-                        <div class="burger burger--card">
-                            <input type="checkbox" class="burger--card_check" />
-                            <div class="tasks--btn">
-                            <svg
-                            width="18"
-                            height="4"
-                            viewBox="0 0 18 4"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M9 3C9.55228 3 10 2.55228 10 2C10 1.44772 9.55228 1 9 1C8.44772 1 8 1.44772 8 2C8 2.55228 8.44772 3 9 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M16 3C16.5523 3 17 2.55228 17 2C17 1.44772 16.5523 1 16 1C15.4477 1 15 1.44772 15 2C15 2.55228 15.4477 3 16 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M2 3C2.55228 3 3 2.55228 3 2C3 1.44772 2.55228 1 2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3Z"
-                                stroke="black"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            </svg>
-                        </div>
-                            <ul class="burger--card_menu-items">
-                                <li>
-                                    <button class="kebab--btn btnWip" type="button">WIP</button>
-                                </li>
-                                <li>
-                                    <button class="kebab--btn delete" type="button">
-                                        Delete
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="kebab--btn btnToDo" type="button">To Do</button>
-                                </li>
-                                <li>
-                                    <button class="kebab--btn modify" type="submit">Modify</button>
-                                </li>
-                                <li>
-                                    <button class="kebab--btn btnDone" type="button">Done</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <h3 class="title">Something</h3>
-                        <p class="more">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                            obcaecati illum autem odit tempora ea, laboriosam aliquam
-                            accusamus quod doloribus ducimus expedita, laborum soluta, amet
-                            corrupti? Quod exercitationem dolore quas.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--cartes-->
+        <div class="card done" style="display:block">
+          <div class="card_title">
+            <h2>Done</h2>
+        </div>
+          <!--tasks-->
+          <div class="tasksContainer tasksDone">
+            
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
