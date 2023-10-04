@@ -138,21 +138,21 @@ p.more {
   transform: scale(1.2);
 }
 
-.task {
+.tasks {
   background-color: white;
   padding: 3% 5% 3% 5%;
   border-radius: 20px;
   height: 30%;
 }
-.task .infos {
+.tasks .infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.task .infos .elipse {
+.tasks .infos .elipse {
   flex-grow: 0.1;
 }
-.task .infos .date {
+.tasks .infos .date {
   flex-grow: 2;
 }
 
