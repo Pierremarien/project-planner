@@ -320,6 +320,42 @@ header nav .searchBox {
   left: 50%;
 }
 
+.click {
+  border: none;
+  background-color: #EEF2F5;
+  border-radius: 50px;
+}
+
+.form {
+  border-radius: 20px;
+  position: absolute;
+  background-color: #eaebec;
+  width: 220px;
+  height: 150px;
+  padding-top: 10px;
+}
+.form .date {
+  border-radius: 10px;
+  font-family: "Onest", sans-serif;
+}
+.form .titleForm {
+  border-radius: 10px;
+  height: 25px;
+  font-family: "Onest", sans-serif;
+  margin-top: 1%;
+}
+.form .description {
+  border-radius: 10px;
+  height: 40px;
+  font-family: "Onest", sans-serif;
+  margin-top: 1%;
+}
+.form .submit {
+  font-family: "Onest", sans-serif;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+
 .searchBox {
   position: absolute;
   transform: translate(-50%, 50%);
