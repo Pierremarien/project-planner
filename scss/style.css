@@ -188,7 +188,6 @@ p.more {
 }
 .burger--card {
   position: relative;
-  border: 1px solid black;
   height: 35px;
   width: 35px;
 }
