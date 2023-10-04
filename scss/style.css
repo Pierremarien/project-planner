@@ -296,6 +296,30 @@ p.more {
     box-shadow: 8px 9px 18px 9px rgba(56, 56, 56, 0.83);
   }
 }
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 15px;
+}
+header .logo {
+  margin-left: 3%;
+}
+header nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .searchBox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
 .click {
   border: none;
   background-color: #EEF2F5;

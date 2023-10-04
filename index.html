@@ -4,54 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Planner</title>
-    <script src="https://kit.fontawesome.com/1ff63d2ee1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./scss/style.css">
+    <script
+      src="https://kit.fontawesome.com/1ff63d2ee1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./scss/style.css" />
     <script defer src="./cardsForms.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav> 
-            <div class="logo">
-                <img src="./assets/images/logo/logo.png">
-            </div>
-            <!--ajouter search barre-->
-            <div class="searchBox">
-                <input class="searchInput"type="text" name="" placeholder="Search">
-                <button class="searchButton" href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <!-- burger menus -->
-    <!-- burger navbar -->
-            <div class="burger burger--navbar">
-                <input class="burger--navbar_check" type="checkbox" />
-                <div class="burger--navbar_hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="burger--navbar_menu-items">
-                    <li>
-                        <button class="btn" type="button">All</button> <!--burger navBar-->
-                    </li>
-                    <li>
-                        <button class="btn" type="button">Done</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">WIP</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">To Do</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">Date</button>
-                    </li>
-                    <li>
-                        <button class="btn" type="button">Name</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img src="./assets/images/logo/logo.png" />
+        </div>
+        <!--ajouter search barre-->
+        <div class="searchBox">
+          <input class="searchInput" type="text" name="" placeholder="Search" />
+          <button class="searchButton" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- burger menus -->
+        <!-- burger navbar -->
+        <div class="burger burger--navbar">
+          <input class="burger--navbar_check" type="checkbox" />
+          <div class="burger--navbar_hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="burger--navbar_menu-items">
+            <li>
+              <button class="btn" type="button">All</button>
+              <!--burger navBar-->
+            </li>
+            <li>
+              <button class="btn" type="button">Done</button>
+            </li>
+            <li>
+              <button class="btn" type="button">WIP</button>
+            </li>
+            <li>
+              <button class="btn" type="button">To Do</button>
+            </li>
+            <li>
+              <button class="btn" type="button">Date</button>
+            </li>
+            <li>
+              <button class="btn" type="button">Name</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <!-- bouton add task -->
@@ -63,36 +67,37 @@
               <!--bouton add-->
               <div class="formCard">
                 <button class="click">
-                    <svg class="svgform"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 1V15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M1 8H15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-            <form class="form" style="display: none;">
-                <input class="date" type="date"/>
-                <input class="titleForm" type="text"/>
-                <input class="description" type="text"/>
-                <input class="submit" type="submit" value="Submit"/>
-            </form>
-        </div>
+                  <svg
+                    class="svgform"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 1V15"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 8H15"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <form class="form" style="display: none">
+                  <input class="date" type="date" />
+                  <input class="titleForm" type="text" />
+                  <input class="description" type="text" />
+                  <input class="submit" type="submit" value="Submit" />
+                </form>
+              </div>
             </div>
           </div>
           <!--tasks-->
@@ -178,31 +183,6 @@
         <div class="card">
           <div class="card_title">
             <h2>Work In Progress</h2>
-            <div class="btn--card">
-              <!--bouton add-->
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 1V15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M1 8H15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
           </div>
           <!--tasks-->
           <div class="tasks">
@@ -287,31 +267,6 @@
         <div class="card">
           <div class="card_title">
             <h2>Done</h2>
-            <div class="btn--card">
-              <!--bouton add-->
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 1V15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M1 8H15"
-                  stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
           </div>
           <!--tasks-->
           <div class="tasks">
