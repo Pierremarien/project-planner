@@ -10,7 +10,6 @@ function taskInject() {
         let descriptionValue = description.value.trim();
         let datePicker = document.querySelector('.date');
         let dateValue = datePicker.value;
-
         addTask(titleValue, descriptionValue, dateValue);
     });
 
@@ -69,19 +68,19 @@ function taskInject() {
                         </div>
                         <ul class="burger--card_menu-items">
                         <li>
-                            <button class="kebab--btn" type="button">WIP</button>
+                            <button class="kebab--btn modify" type="button">Modify</button>
                         </li>
                         <li>
                             <button class="kebab--btn delete" type="button">Delete</button>
                         </li>
                         <li>
-                            <button class="kebab--btn" type="button">To Do</button>
+                            <button class="kebab--btn btnTodo" type="button">To Do</button>
                         </li>
                         <li>
-                            <button class="kebab--btn modify" type="button">Modify</button>
+                            <button class="kebab--btn btnWip" type="button">WIP</button>
                         </li>
                         <li>
-                            <button class="kebab--btn" type="button">Done</button>
+                            <button class="kebab--btn btnDone" type="button">Done</button>
                         </li>
                         </ul>
                     </div>
@@ -96,7 +95,9 @@ function taskInject() {
             target.innerHTML += task;
     }
     sortByName();
-
+    modifybtn();
+    deleter();
+    moveTasks();
 }
 
 taskInject();
