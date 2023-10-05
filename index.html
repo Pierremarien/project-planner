@@ -12,6 +12,7 @@
     <script defer src="./cardsForms.js"></script>
     <link rel="stylesheet" href="./scss/style.css" />
     <script defer src="./modify.js"></script>
+    <script defer src="./filtres.js"></script>
   </head>
   <body>
     <header>
@@ -36,18 +37,17 @@
             <span class="line line3"></span>
           </div>
           <ul class="burger--navbar_menu-items">
-            <li>
-              <button class="btn" type="button">All</button>
-              <!--burger navBar-->
+            <li><!--burger navBar-->
+              <button class="btn btn--all" type="button">All</button>
             </li>
             <li>
-              <button class="btn" type="button">Done</button>
+              <button class="btn btn--done" type="button">Done</button>
             </li>
             <li>
-              <button class="btn" type="button">WIP</button>
+              <button class="btn btn--wip" type="button">WIP</button>
             </li>
             <li>
-              <button class="btn" type="button">To Do</button>
+              <button class="btn btn--todo" type="button">To Do</button>
             </li>
             <li>
               <button class="btn" type="button">Date</button>
@@ -62,7 +62,7 @@
     <main>
       <!-- bouton add task -->
       <section class="cards">
-        <div class="card">
+        <div class="card todo" style="display:block">
           <div class="card_title">
             <h2>To Do</h2>
             <div class="btn--card">
@@ -183,7 +183,7 @@
           </div>
         </div>
         <!--cartes-->
-        <div class="card">
+        <div class="card wip" style="display:block">
           <div class="card_title">
             <h2>Work In Progress</h2>
           </div>
@@ -269,7 +269,7 @@
         </div>
 
         <!--cartes-->
-        <div class="card">
+        <div class="card done" style="display:block">
           <div class="card_title">
             <h2>Done</h2>
         </div>
