@@ -96,12 +96,15 @@ p.more {
 }
 
 .logo img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 
 .btn {
-  color: black;
+  color: #18B0FF;
+  font-family: "Gochi Hand";
+  font-weight: 600;
+  font-size: larger;
   text-decoration: none;
   padding: 10px 2px 10px 2px;
   border: none;
@@ -112,7 +115,7 @@ p.more {
 }
 .btn:hover {
   border-radius: 50px;
-  background-color: rgba(238, 238, 238, 0.9333333333);
+  background-color: #EAD9E2;
 }
 
 .btn--card {
@@ -124,10 +127,11 @@ p.more {
 }
 .btn--card:hover {
   border-radius: 50px;
-  filter: drop-shadow(5px 5px 5px #626060);
+  filter: drop-shadow(5px 5px 5px #505d68);
 }
 
 .tasks--btn {
+  font-family: "Onest", sans-serif;
   padding: 10px 2px 10px 2px;
   text-align: center;
   justify-content: center;
@@ -135,14 +139,16 @@ p.more {
   height: 30px;
 }
 .tasks--btn:hover {
-  filter: drop-shadow(5px 5px 5px #626060);
+  filter: drop-shadow(5px 5px 5px #505d68);
 }
 
 .kebab--btn {
   width: 80px;
-  background-color: rgb(128, 128, 128);
+  background-color: #18B0FF;
   filter: opacity(40%);
   color: white;
+  font-weight: 600;
+  font-family: "Onest", sans-serif;
   border-radius: 15px;
   transition: 0.3s;
 }
@@ -151,7 +157,7 @@ p.more {
 }
 
 .tasks {
-  background-color: white;
+  background-color: #EAD9E2;
   padding: 3% 5% 3% 5%;
   border-radius: 20px;
   width: 100%;
@@ -175,7 +181,7 @@ p.more {
   height: 840px;
   left: 46px;
   top: 181px;
-  background: #EEF2F5;
+  background: #DABBD4;
   border-radius: 10px;
   padding: 25px 40px 25px 40px;
 }
@@ -321,9 +327,22 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding: 25px 15px;
+  list-style: none;
 }
-header .logo {
+header .marque {
+  display: flex;
+  align-items: center;
+}
+header .marque .logo {
   margin-left: 3%;
+}
+header .marque h1 {
+  margin-left: 30px;
+  font-family: "Gochi Hand";
+  font-size: 40px;
+  color: #18B0FF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  white-space: nowrap;
 }
 header nav {
   position: relative;
@@ -336,7 +355,7 @@ header nav {
 }
 header nav .searchBox {
   position: absolute;
-  top: 0;
+  top: 45px;
   left: 50%;
 }
 
@@ -349,7 +368,7 @@ header nav .searchBox {
 .form {
   border-radius: 20px;
   position: absolute;
-  background-color: #eaebec;
+  background-color: #EAD9E2;
   width: 220px;
   height: 150px;
   padding-top: 10px;
@@ -371,7 +390,7 @@ header nav .searchBox {
   margin-top: 1%;
 }
 .form .submit {
-  font-family: "Onest", sans-serif;
+  font-family: "Gochi Hand";
   border-radius: 10px;
   margin-top: 1%;
 }
