@@ -32,7 +32,7 @@ function search() { //je crée la fonction
 //             searchTitle[i].classList.add('is-hidden');
 //         }
 //     }
-// } 
+// }  trouvé sur le net
 
 // const searchInput=document.querySelector('.searchInput');
 // const searchItem=document.querySelectorAll('.title');
@@ -47,4 +47,6 @@ function search() { //je crée la fonction
 //             element.style.display='none';
 //         }
 //     }
-// })
+// }) une autre version
+
+//aucune ne marche, tentative d'autre chose au-dessus ? ¯\_(ツ)_/¯ idfk
