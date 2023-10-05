@@ -1,4 +1,4 @@
-// To Do ALLER DANS TO DO
+/* // To Do ALLER DANS TO DO
     //1> recurerer bouton par la class
     //2> recuperer le parent du bouton (tasks)
 const boutonToDo = document.querySelector('.btnToDo');//recup .btnToDo
@@ -28,4 +28,30 @@ function deplacerTache() { // fonction de déplacer la tâche
 
 // Wip
 
-// Done
+// Done */
+
+function moveTasks() {
+    const tasksSection = document.querySelector('.cards'); 
+    tasksSection.addEventListener('click', function (e) {
+        if (e.target.classList.contains('btnTodo')) {
+            const parent = e.target.closest('.tasks');
+            const section = document.querySelector('.tasksToDo');
+            section.appendChild(parent);
+        }
+
+        if (e.target.classList.contains('btnWip')) {
+            const parent = e.target.closest('.tasks');
+            const section = document.querySelector('.tasksWip');
+            section.appendChild(parent);
+            
+        }
+
+        if (e.target.classList.contains('btnDone')) {
+            const parent = e.target.closest('.tasks');
+            const section = document.querySelector('.tasksDone');
+            section.appendChild(parent);
+        }
+
+    });
+
+}

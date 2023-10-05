@@ -13,7 +13,7 @@
 
 
 
-function Delete() { 
+function deleter() { 
     const tasksSection=document.querySelector('.cards');
     tasksSection.addEventListener('click', function (e) {
         if (e.target.classList.contains('delete')) {
