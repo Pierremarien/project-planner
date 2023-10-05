@@ -20,21 +20,8 @@ function sortByName() {
 
             return aTitle.localeCompare(bTitle);
         })
-        tasks.forEach((task) => {
+        tasks.forEach((task) => { //MES COUILLES C'EST DU POULET
             elem.appendChild(task);
         })
-        
     })
-    //     tasks.sort((a,b) => {
-    //         let titleA= new title(a.querySelector('.title').textContent);
-    //         let titleB= new title(b.querySelector('.title').textContent);
-    //     })
-    //     tasks.forEach((task) => {
-    //         elem.appendChild(task);
-    //     });
-    // });
-    
-    // containers.forEach(container => {
-    //     const tasks=container.querySelector('.tasks');
-    //     const sortCards=array.from(tasks);
 }
