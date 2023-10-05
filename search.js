@@ -7,8 +7,6 @@ function search() { //je crée la fonction
     const input=document.querySelector('.searchInput').value //je sélection la valeur de la barre de recherche
     const sections=['tasksToDo', 'tasksWip', 'tasksDone']; //je lui dis de prendre toutes les cartes
     const searchTitle=document.querySelectorAll('.title'); //je lui dis de prendre tous les titres qu'il trouve
-    const section=document.querySelector(`.${section}`);
-    const searching=Array.from(section.querySelector('.tasks'));
     input.addEventListener('keyup', () => {
         for (const i=0; searchTitle.legnth>i; i++) {
             if (searchTitle[i].innerHTML.toLowerCase.includes(input())) {
@@ -17,9 +15,6 @@ function search() { //je crée la fonction
                 sections.style.display='none';
             }
         }
-        searching.forEach((task) => {
-            searchTitle.appendChild(task);
-        })
     })
 }
 
