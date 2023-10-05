@@ -97,6 +97,7 @@ p.more {
   background-color: white;
   text-align: center;
   justify-content: center;
+  width: 60px;
 }
 .btn:hover {
   border-radius: 50px;
