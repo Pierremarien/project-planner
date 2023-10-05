@@ -95,6 +95,7 @@ function taskInject() {
             </div>`;
             target.innerHTML += task;
     }
+    sortByName();
 
 }
 
