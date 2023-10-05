@@ -10,4 +10,3 @@ deleteBtn.forEach((bouton) => {
 //     let parent = deleteBtn.parentNode.parentNode.parentNode.parentNode;
 //     parent.remove();
 // }); 
-
